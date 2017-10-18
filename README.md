@@ -58,7 +58,7 @@ cephfs-bosh-release
       diego-cell/ab4190e7-ab52-4925-ae3c-c01db5540cfb:~$ mount: **only root can do that** **vcap can't**
 - original broker's config uses "mds" term to register "mon"
 
-
+---
 ## Overview
 
 This bosh release includes all of the requisite parts to provide ceph file system volume mounts to a cloudfoundry/Diego deployment.
