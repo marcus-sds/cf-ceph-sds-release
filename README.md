@@ -1,7 +1,63 @@
 cephfs-bosh-release
 ===================
 
-*Tested on bosh-lite and AWS...but only actually works on AWS*
+## Customized Things (by marcus-sds)
+- **upgraded to Jewel and ceph itself is deployed by ansible cause of attachable volumes count issue**
+- cephdriver
+      **ceph mount option with client-quota**
+      src/code.cloudfoundry.org/cephdriver
+      <pre>
+      217         err = d.os.MkdirAll(volume.LocalMountPoint, os.ModePerm)
+      218         if err != nil {
+      219                 logger.Error("failed-creating-localmountpoint", err)
+      220                 return voldriver.MountResponse{Err: fmt.Sprintf("Unable to create local mount point for volume '%s'", mountRequest.Name)}
+      221         }
+      222
+      223         cmdArgs := []string{"-k", volume.KeyPath, "-m", fmt.Sprintf("%s:6789", volume.IP), " --client-quota -r", volume.RemoteMountPoint, volume.LocalMountPoint}
+      224         if err := d.callCeph(env, cmdArgs); err != nil {
+      225                 logger.Error("Error mounting volume", err)
+      226                 return voldriver.MountResponse{Err: fmt.Sprintf("Error mounting '%s' (%s)", mountRequest.Name, err.Error())}
+      227         }
+      228
+      </pre>
+
+- cephbroker 
+      **quota**
+      ./src/code.cloudfoundry.org/cephbroker/cephbroker/client.go
+      <pre>
+      99 func (c *cephClient) CreateShare(env voldriver.Env, shareName string) (string, error) {
+      100         logger := env.Logger().Session("create-share", lager.Data{"shareName": shareName})
+      101         logger.Info("start")
+      102         defer logger.Info("end")
+      103
+      104         sharePath := filepath.Join(c.baseLocalMountPoint, shareName)
+      105         err := c.os.MkdirAll(sharePath, os.ModePerm)
+      106         if err != nil {
+      107                 logger.Error("failed-to-create-share", err)
+      108                 return "", fmt.Errorf("failed to create share '%s'", sharePath)
+      109         }
+      110
+      111         cmd := "setfattr"
+      112         args := []string{"-n","ceph.quota.max_bytes" ,"-v","5000000000",sharePath}
+      113         if err := exec.Command(cmd, args...).Run(); err != nil {
+      114                 return "", fmt.Errorf("failed to create share '%s'", sharePath)
+      115         }
+      116         args = []string{"-n","ceph.quota.max_files" ,"-v","50000",sharePath}
+      117         if err := exec.Command(cmd, args...).Run(); err != nil {
+      118                 return "", fmt.Errorf("failed to create share '%s'", sharePath)
+      119         }
+      120         return sharePath, nil
+      121 }
+      </pre>
+      
+      > https://stackoverflow.com/questions/34487176/cephfs-quota-cant-work
+      > http://lists.ceph.com/pipermail/ceph-users-ceph.com/2016-May/009983.html
+      > setfattr -n ceph.quota.max_bytes -v 100000000  /ceph/rc
+
+- fuse mount permission issue
+      diego-cell/ab4190e7-ab52-4925-ae3c-c01db5540cfb:~$ mount: **only root can do that** **vcap can't**
+- original broker's config uses "mds" term to register "mon"
+
 
 ## Overview
 
