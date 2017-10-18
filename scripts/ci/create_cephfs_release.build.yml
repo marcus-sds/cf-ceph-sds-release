@@ -1,0 +1,16 @@
+---
+platform: linux
+
+rootfs_uri: docker:///cloudfoundry/diego-pipeline
+
+inputs:
+  - name: cephfs-bosh-release
+  - name: ceph-version
+
+outputs:
+  - name: created-cephfs-bosh-release
+
+params: []
+
+run:
+  path: cephfs-bosh-release/scripts/ci/create_cephfs_release

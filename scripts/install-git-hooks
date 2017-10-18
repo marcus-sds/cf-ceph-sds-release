@@ -1,0 +1,7 @@
+#!/bin/bash
+
+RELEASE=$(cd $(dirname $0)/.. && pwd)
+
+mkdir -p ${RELEASE}/.git/hooks
+
+ln -fs ${RELEASE}/git-hooks/pre-commit ${RELEASE}/.git/hooks/pre-commit

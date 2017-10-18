@@ -1,0 +1,29 @@
+---
+name: cephdriver
+
+templates:
+  install.erb: bin/pre-start
+  ctl.erb: bin/cephdriver_ctl
+
+packages:
+- golang-ceph
+- cephfs_pid_utils
+- cephdriver
+- cephfuse
+
+properties:
+  cephdriver.listen_addr:
+    description: "address cephdriver listens on"
+    default: "0.0.0.0:8089"
+  cephdriver.debug_addr:
+    description: "address cephdriver will serve debug info"
+    default: "0.0.0.0:8189"
+  cephdriver.driver_paths:
+    description: "path to place driver spec/json file for volman to discover"
+    default: "/var/vcap/data/voldrivers"
+  cephdriver.cell_mount_path:
+    description: "path to fuse-mount volumes into on the cell"
+    default: "/var/vcap/data/volumes/ceph"
+  cephdriver.log_level:
+    description: "cephdriver log level"
+    default: "info"

@@ -1,0 +1,101 @@
+[submodule "src/github.com/cloudfoundry-incubator/cephdriver"]
+	path = src/github.com/cloudfoundry-incubator/cephdriver
+	url = https://github.com/cloudfoundry-incubator/cephdriver
+	branch = master
+[submodule "src/github.com/onsi/ginkgo"]
+	path = src/github.com/onsi/ginkgo
+	url = https://github.com/onsi/ginkgo
+	branch = master
+[submodule "src/github.com/onsi/gomega"]
+	path = src/github.com/onsi/gomega
+	url = https://github.com/onsi/gomega
+	branch = master
+[submodule "src/github.com/tedsuo/rata"]
+	path = src/github.com/tedsuo/rata
+	url = https://github.com/tedsuo/rata
+	branch = master
+[submodule "src/github.com/bmizerany/pat"]
+	path = src/github.com/bmizerany/pat
+	url = https://github.com/bmizerany/pat
+	branch = master
+[submodule "src/github.com/tedsuo/ifrit"]
+	path = src/github.com/tedsuo/ifrit
+	url = https://github.com/tedsuo/ifrit
+[submodule "src/github.com/cloundfoundry/gunk"]
+	path = src/github.com/cloundfoundry/gunk
+	url = https://github.com/cloudfoundry/gunk.git
+[submodule "src/github.com/cloudfoundry-incubator/cephbroker"]
+	path = src/github.com/cloudfoundry-incubator/cephbroker
+	url = https://github.com/cloudfoundry-incubator/cephbroker
+	branch = master
+[submodule "src/github.com/cloudfoundry-incubator/voldriver"]
+	path = src/github.com/cloudfoundry-incubator/voldriver
+	url = https://github.com/cloudfoundry-incubator/voldriver
+	branch = master
+[submodule "src/code.cloudfoundry.org/cfhttp"]
+	path = src/code.cloudfoundry.org/cfhttp
+	url = https://github.com/cloudfoundry/cfhttp
+	branch = master
+[submodule "src/code.cloudfoundry.org/cflager"]
+	path = src/code.cloudfoundry.org/cflager
+	url = https://github.com/cloudfoundry/cflager
+	branch = master
+[submodule "src/code.cloudfoundry.org/debugserver"]
+	path = src/code.cloudfoundry.org/debugserver
+	url = https://github.com/cloudfoundry/debugserver
+	branch = master
+[submodule "src/code.cloudfoundry.org/clock"]
+	path = src/code.cloudfoundry.org/clock
+	url = https://github.com/cloudfoundry/clock
+	branch = master
+[submodule "src/code.cloudfoundry.org/lager"]
+	path = src/code.cloudfoundry.org/lager
+	url = https://github.com/cloudfoundry/lager
+	branch = master
+[submodule "src/gopkg.in/yaml.v2"]
+	path = src/gopkg.in/yaml.v2
+	url = https://gopkg.in/yaml.v2
+	branch = v2
+[submodule "src/code.cloudfoundry.com/voldriver"]
+	path = src/code.cloudfoundry.com/voldriver
+	url = https://github.com/cloudfoundry-incubator/voldriver
+[submodule "src/code.cloudfoundry.org/voldriver"]
+	path = src/code.cloudfoundry.org/voldriver
+	url = https://github.com/cloudfoundry/voldriver
+	branch = master
+[submodule "src/code.cloudfoundry.org/cephbroker"]
+	path = src/code.cloudfoundry.org/cephbroker
+	url = https://github.com/cloudfoundry-incubator/cephbroker
+	branch = master
+[submodule "src/code.cloudfoundry.org/cephdriver"]
+	path = src/code.cloudfoundry.org/cephdriver
+	url = https://github.com/cloudfoundry-incubator/cephdriver
+	branch = master
+[submodule "src/code.cloudfoundry.org/persi-acceptance-tests"]
+	path = src/code.cloudfoundry.org/persi-acceptance-tests
+	url = https://github.com/cloudfoundry/persi-acceptance-tests
+	branch = master
+[submodule "src/github.com/cloudfoundry-incubator/cf-test-helpers"]
+	path = src/github.com/cloudfoundry-incubator/cf-test-helpers
+	url = https://github.com/cloudfoundry-incubator/cf-test-helpers
+	branch = master
+[submodule "src/code.cloudfoundry.org/goshims"]
+	path = src/code.cloudfoundry.org/goshims
+	url = https://github.com/cloudfoundry/goshims
+	branch = master
+[submodule "src/github.com/nu7hatch/gouuid"]
+	path = src/github.com/nu7hatch/gouuid
+	url = https://github.com/nu7hatch/gouuid
+	branch = master
+[submodule "src/github.com/pivotal-cf/brokerapi"]
+	path = src/github.com/pivotal-cf/brokerapi
+	url = https://github.com/pivotal-cf/brokerapi
+	branch = master
+[submodule "src/github.com/gorilla/mux/"]
+	path = src/github.com/gorilla/mux/
+	url = https://github.com/gorilla/mux
+	branch = master
+[submodule "src/github.com/gorilla/mux"]
+	path = src/github.com/gorilla/mux
+	url = https://github.com/gorilla/mux
+	branch = master

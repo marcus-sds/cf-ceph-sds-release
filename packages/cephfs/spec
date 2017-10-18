@@ -1,0 +1,9 @@
+---
+name: cephfs
+
+dependencies:
+- python27
+- setuptools
+
+files:
+- cephfs/**/*
