@@ -48,9 +48,15 @@ case $1 in
     chown vcap:vcap $MOUNT_DIR
     fusermount -u $MOUNT_DIR
     ceph-fuse -m <%= p("cephbroker.mds") %> -c /var/vcap/jobs/cephbroker/keys/ceph.client.admin.keyring -r / $MOUNT_DIR
+    sleep 5
     chown -R vcap:vcap $MOUNT_DIR
     fusermount -u $MOUNT_DIR
-    rm -rf $MOUNT_DIR
+
+    lists=`cat /etc/mtab|grep ceph-fuse|awk '{print $2}'`
+    for list in $lists
+    do
+     fusermount -u $list
+    done
 
     echo "{}" > $CONFIG_DIR/ServiceBindings.json
     echo "{}" > $CONFIG_DIR/ServiceInstances.json
