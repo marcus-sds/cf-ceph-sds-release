@@ -82,10 +82,6 @@ cephfs/libgoogle-perftools4_2.1-2ubuntu1.1_amd64.deb:
   size: 184230
   object_id: ab97439d-c72f-4aad-b6dd-8f7865ae0356
   sha: 0af1a995be72017a994a5bc4a2bf08672168d19a
-cephfs/libicu52_52.1-3ubuntu0.4_amd64.deb:
-  size: 6751826
-  object_id: 26b017ae-73ce-4c14-88da-f84b9c4e756d
-  sha: 75caf725dd1dc543caeb991f3d7ed1ca9446d79c
 cephfs/libjs-jquery_1.7.2+dfsg-2ubuntu1_all.deb:
   size: 78758
   object_id: a609c3fb-f3cb-4f99-b753-17ade9c22705
