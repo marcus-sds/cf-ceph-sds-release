@@ -14,14 +14,6 @@ cephfs/ceph-fs-common_9.2.0-1trusty_amd64.deb:
   size: 882452
   object_id: 18713b32-bf47-4ad6-98c9-43ded6322a01
   sha: 65c6996566fd45aec52c02a76599013d58ebfdf5
-cephfs/ceph-fuse_9.2.0-1trusty_amd64.deb:
-  size: 2440610
-  object_id: f1c18501-a6fe-4653-be54-7422b372a76b
-  sha: 9995a1ba7b1dead2f54b77258fd649d49769c41c
-cephfs/ceph-mds_9.2.0-1trusty_amd64.deb:
-  size: 9694668
-  object_id: c6839d17-2024-4bc1-9c5b-931d75703cd2
-  sha: dddfcab60e34327d2b9e0f45e59a1484a06ec440
 cephfs/cryptsetup-bin_2%3a1.6.1-1ubuntu1_amd64.deb:
   size: 80440
   object_id: 8e029432-135a-4e1a-a1fb-b28b2256bdc9
