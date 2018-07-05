@@ -6,10 +6,6 @@ cephfs/ca-certificates_20141019ubuntu0.14.04.1_all.deb:
   size: 189272
   object_id: 51d9198b-b682-4baa-b7b2-8e3a9173cb1b
   sha: 11e5913e99c57e94cea15cf2178aa3c3236469bb
-cephfs/ceph-common_9.2.0-1trusty_amd64.deb:
-  size: 5997694
-  object_id: feb04f33-226e-4ed0-a704-5b57be0a9387
-  sha: ddd7082716047e536351eaab5b7f733f2c6466bc
 cephfs/ceph-deploy_1.5.31_all.deb:
   size: 92178
   object_id: e2f16d5c-f85d-4931-9fa2-683e673d3071
@@ -70,10 +66,6 @@ cephfs/libboost-thread1.54.0_1.54.0-4ubuntu3.1_amd64.deb:
   size: 26542
   object_id: 35b27aa8-89eb-458b-959a-ee3f64c76f92
   sha: 2a70eda354cff5776222f8fe9162f3ab1823900f
-cephfs/libcephfs1_9.2.0-1trusty_amd64.deb:
-  size: 2459858
-  object_id: 1b87b18d-6f38-4e3a-939e-52fb44d6c996
-  sha: f919e193b8e567b00a0b1bd7105047c5f18fdec4
 cephfs/libcryptsetup4_2%3a1.6.1-1ubuntu1_amd64.deb:
   size: 77020
   object_id: 54789e2e-4f20-41ea-b9a2-b1945b6f840c
@@ -130,14 +122,6 @@ cephfs/libnss3_2%3a3.19.2.1-0ubuntu0.14.04.2_amd64.deb:
   size: 1103374
   object_id: 33b93165-1727-4e43-a880-2c8c1f9fdb16
   sha: 2689af33309e9b3b68bbe65f840d03f12b415f0c
-cephfs/librados2_9.2.0-1trusty_amd64.deb:
-  size: 2374344
-  object_id: 100bc4ac-ef1d-4e63-90a6-79cb1ae34e39
-  sha: 57bd2c9d1a08aabcd565819d59695289e56c2f98
-cephfs/libradosstriper1_9.2.0-1trusty_amd64.deb:
-  size: 2434148
-  object_id: b1a082a1-098e-423f-98eb-9b65aa5c4792
-  sha: 78f8cb1445e63a029e02e8b95c9651e1f24cabd6
 cephfs/librbd1_9.2.0-1trusty_amd64.deb:
   size: 2505774
   object_id: ce568565-68d5-48aa-8ec2-a0545123be23
