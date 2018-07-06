@@ -15,7 +15,7 @@ pushd $VOL_DIR
   for d in *; do rm -rf $d || true; done
 popd
 
-
+set +e -x
 addgroup fuse
 modprobe fuse
 adduser vcap fuse
@@ -25,6 +25,7 @@ user_allow_other
 EOF
 chmod 644 /etc/fuse.conf
 
+set -e -x
 sudo mkdir -p /var/run/ceph && sudo chown -R vcap:vcap /var/run/ceph
 sudo mkdir -p /etc/ceph && sudo chown -R vcap:vcap /etc/ceph
 
