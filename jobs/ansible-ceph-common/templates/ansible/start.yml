@@ -1,0 +1,22 @@
+---
+- name: Ansible check directory
+  stat:
+    path: /etc/apt/sources.list.d/ceph.list
+  register: file_ceph
+
+- name: setup ceph repository
+  shell: |
+    cp /var/vcap/jobs/ansible-ceph-common/config/ceph.list /etc/apt/
+
+- name: Install ceph-common
+  shell: |
+    apt-get update
+    apt-get install -y ceph-common
+  
+- name: Link sensu directory
+  shell: |
+    rm -rf /etc/ceph
+    ln -s /var/vcap/jobs/ansible-ceph-common/ceph /etc/ceph
+#  when: not file_sensu_org.stat.exists
+  ignore_errors: True
+

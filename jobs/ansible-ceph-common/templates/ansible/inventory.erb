@@ -1,0 +1,22 @@
+[inventory:children]
+members
+client
+
+[inventory:vars]
+use_bootstrap_node=false
+
+[members:children]
+instance
+nodes
+
+[nodes]
+
+[instance]
+<%= spec.name %>-<%= spec.index %>-<%= spec.deployment %> ansible_host=<%= spec.ip %>
+
+[instance:vars]
+description="<%= spec.name %>-<%= spec.index %>-<%= spec.deployment %> AZ=<%= spec.az %> ID=<%= spec.id %>"
+
+# Client where run the playbooks
+[client]
+localhost ansible_python_interpreter=/var/vcap/packages/ansible/bin/python ansible_connection=local ansible_become=false

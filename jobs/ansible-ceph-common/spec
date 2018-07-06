@@ -1,0 +1,19 @@
+---
+name: ansible-ceph-common
+
+templates:
+  ansible/inventory.erb: ansible/inventory
+  ansible/start.yml: ansible/start.yml
+  ansible/pre-start.yml: ansible/50-pre-start.yml
+  ceph.list.erb: config/ceph.list
+  ceph.conf.erb: ceph/ceph.conf
+
+packages: []
+
+properties:
+  oscode:
+    default: trusty
+  cephcode:
+    default: mimic
+  monips:
+    default: localhost
