@@ -86,10 +86,6 @@ cephfs/libnss3_2%3a3.19.2.1-0ubuntu0.14.04.2_amd64.deb:
   size: 1103374
   object_id: 33b93165-1727-4e43-a880-2c8c1f9fdb16
   sha: 2689af33309e9b3b68bbe65f840d03f12b415f0c
-cephfs/librbd1_9.2.0-1trusty_amd64.deb:
-  size: 2505774
-  object_id: ce568565-68d5-48aa-8ec2-a0545123be23
-  sha: 0a30909abe3820878602c8519f7ca11e77fbf30b
 cephfs/libreadline5_5.2+dfsg-2_amd64.deb:
   size: 130428
   object_id: f4c5a32c-c8c7-4d48-8b07-07fe950edcb7
@@ -110,10 +106,6 @@ cephfs/liburcu1_0.7.12-0ubuntu2_amd64.deb:
   size: 34852
   object_id: 1c311825-bd88-4400-b002-9ba8bc8412fd
   sha: 2ac3e285032f428b9f67c3993054ed463fb4e6ab
-cephfs/python-cephfs_9.2.0-1trusty_amd64.deb:
-  size: 865420
-  object_id: d4bbef8b-07df-4941-986b-f34f9a15ce08
-  sha: e089cccdf5a99f528c917cee0793da98e015d0c3
 cephfs/python-chardet_2.0.1-2build2_all.deb:
   size: 106256
   object_id: 4a629aeb-ece0-452e-ba23-d5ea94430ac6
@@ -134,14 +126,6 @@ cephfs/python-markupsafe_0.18-1build2_amd64.deb:
   size: 14308
   object_id: 49562bb6-eca9-433a-9566-d7ee3dd0ce5f
   sha: 9bf02f8a0d5b6504da191587d160a6f29c828c66
-cephfs/python-rados_9.2.0-1trusty_amd64.deb:
-  size: 874652
-  object_id: ac76f884-0c8d-49e9-84e7-1d399ef9743f
-  sha: 6d5ef2cd7a64d299ab63ac8fbf183c5feaa59603
-cephfs/python-rbd_9.2.0-1trusty_amd64.deb:
-  size: 869498
-  object_id: 8a5d3256-da71-4708-a392-c79287f73ec7
-  sha: 3b08c65d9d8f8857662f89134b391c09133fd651
 cephfs/python-requests_2.2.1-1ubuntu0.3_all.deb:
   size: 43140
   object_id: e32c6c70-5943-4728-933c-5003cb8e87bb
@@ -218,14 +202,6 @@ python27/python-minimal_2.7.5-5ubuntu3_amd64.deb:
   size: 27500
   object_id: fbbb18a4-32dd-418c-ab47-e37cf3f88559
   sha: 5fd061c8e2ad05737ce421ebeb7a2d4231a07fc3
-python27/python_2.7.5-5ubuntu3_amd64.deb:
-  size: 133698
-  object_id: e45c4efd-be8f-4bc8-bcec-7b2d7afbf1f0
-  sha: 5337fb1bc17f737839115c80217cf4be4ce4f39b
-python27/python2.7-minimal_2.7.6-8ubuntu0.2_amd64.deb:
-  size: 1185096
-  object_id: 364c3925-7301-4090-95d7-27fd102e6201
-  sha: 984bfe30245a2e757341b0c9abb16f97ae51b0b8
 python27/python2.7_2.7.6-8ubuntu0.2_amd64.deb:
   size: 195822
   object_id: d87f3583-2d7a-453f-93fc-a5616ef6bea4
